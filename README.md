@@ -24,3 +24,8 @@ Attribute Information: (classes: edible=e, poisonous=p)
     spore-print-color: black=k,brown=n,buff=b,chocolate=h,green=r,orange=o,purple=u,white=w,yellow=y
     population: abundant=a,clustered=c,numerous=n,scattered=s,several=v,solitary=y
     habitat: grasses=g,leaves=l,meadows=m,paths=p,urban=u,waste=w,woods=d
+    
+    Step 1: Cleaning up the dataset. Many columns were filled with invalid rows. They were by default classified as 'gender', which meant that only 'f' or 'm' were accepted as valid. All colums that were classified as 'gender' were changed to 'text'.
+    Step 2: In order to watch for patterns for attributes that were common for edible or poisonous mushrooms, the dataset were split into 2 by class, creating one for edible mushrooms and one for poisonous. 
+    Step 3: In both the 'poisonous'-dataset and the 'edible'-dataset, the attributes are changed from one letter to the whole attribute-name, so as to provide a quicker overlook for the reader in the upcoming models.
+    Step 4: Create charts and models for both the 'poisonous' and 'edible' dataset, so it's easy to see which attributes are more common in which type of mushroom. 
